@@ -158,7 +158,20 @@ header {
         justify-content: right;
     
        }
-}
+       .bottom {
+        display: none;
+       }
+     .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 2em;
+     }
+     .two {
+        margin-bottom: 8rem;
+
+     }
+   
+    }
 
 
 /* 2.3 medium and up */
