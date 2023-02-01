@@ -107,12 +107,20 @@ h6 {
 p {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
+.title-container p {
+    font-size: 0.9em;
+    color: gray;
+}
 
 
 /* ==========================================================================
    2. LAYOUT
    ========================================================================== */
-
+.menu 
+{
+    min-width: 3em;
+    max-width: 3em;
+}
 
 /* Helper to display empty layout containers*/
 
@@ -128,8 +136,6 @@ header {
 
 
 
-
-
 /* 2.1 Core layout */
 
 .row {
@@ -139,29 +145,63 @@ header {
 
 .col {
     position: relative;
-    background-color: rgb(181, 175, 145);
+    background-color: rgb(223, 223, 223);
+    object-fit: fill;
+}
+.title-container {
+text-align: center;
 }
 
+.navbar {
+    display: grid;
+    align-items: center;
+  grid-template-columns: 3fr 1fr;
+  gap: 4em;
 
+}
+/*photo box*/
+
+.sml-photo img{
+    max-height: 20em;
+    object-fit: cover;
+}
+.row-bottom-col {
+    display: grid;
+    background-color: #19b2de;
+    padding: 0%;
+}
+
+.left-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+line-height: 0.1em;
+max-width: 50%;
+}
+/*end*/
 
 /* 2.2 Small only */
 
 @media screen and (max-width: 39.9375em) {
+    
     .s-hide {
         display: none;
         
     }
-    .menu {
-        position: absolute;
-        right: 1em;
-        width: 3rem;
-        justify-content: right;
     
-       }
+
+
+ .grid-container {
+    display: grid;
+ }
+
+
+       
        .bottom {
         display: none;
        }
-     .grid-container {
+     .footer-grid-container {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-gap: 2em;
@@ -170,8 +210,8 @@ header {
         margin-bottom: 8rem;
 
      }
-   
     }
+    
 
 
 /* 2.3 medium and up */
@@ -261,13 +301,7 @@ header {
    5. THEME
    ========================================================================== */
 
-   .menu {
-    position: absolute;
-    right: 1em;
-    width: 3rem;
-    justify-content: right;
 
-   }
 
 /* ==========================================================================
    6. UTILITY classes
