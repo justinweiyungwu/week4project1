@@ -33,7 +33,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    
+    max-width: 100%;
 }
 
 ::-moz-selection {
@@ -119,17 +119,25 @@ p {
 .top-footer-info p {
     font-style: italic;
 }
-.border {
-position: relative;
-right: -9em;
-    border-color: gray;
-    z-index: 0;
-
+.top-footer-info h2 {
+    text-align: left;
+    font-weight: 400;
 }
-.border1 {
+.border {
+    border-color: gray;
     position: relative;
+    right: -1em;
+    margin-left: 9em;
+    z-index: 1;
+    
+}
+
+.border1 {
 border-color: #19b2de;
-top: 6.6em;
+margin-top: -1.2em;
+margin-left: 3em;
+border-width: 2px;
+z-index: 2;
 
 
 }
@@ -218,16 +226,14 @@ min-width: 50%;
 /*footer*/
 
 footer {
-
+    
     background-color: #16242f;
     margin: 2em -2em -2em -2em;
 }
 .footer-grid-container{
     align-items: center;
 }
-.top-footer-image {
-    
-}
+
 .footer-image {
     object-fit: cover;
     border-radius: 50%;
