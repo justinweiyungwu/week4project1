@@ -112,6 +112,35 @@ p {
     color: gray;
 }
 
+.left-text {
+    font-weight: 500;
+    color: #fff;
+}
+.top-footer-info p {
+    font-style: italic;
+}
+.border {
+position: relative;
+right: -9em;
+    border-color: gray;
+    z-index: 0;
+
+}
+.border1 {
+    position: relative;
+border-color: #19b2de;
+top: 6.6em;
+
+
+}
+.title-border {
+    border-color: red;
+}
+
+.mid-footer h2, p{
+     text-align: left;
+
+}
 
 /* ==========================================================================
    2. LAYOUT
@@ -167,6 +196,7 @@ text-align: center;
 }
 .row-bottom-col {
     display: grid;
+    grid-template-columns: 3fr 1fr;
     background-color: #19b2de;
     padding: 0%;
 }
@@ -176,8 +206,39 @@ text-align: center;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-line-height: 0.1em;
-max-width: 50%;
+line-height: 0em;
+min-width: 50%;
+}
+.right-box {
+   max-width: 6em; 
+}
+
+/*end*/
+
+/*footer*/
+
+footer {
+
+    background-color: #16242f;
+    margin: 2em -2em -2em -2em;
+}
+.footer-grid-container{
+    align-items: center;
+}
+.top-footer-image {
+    
+}
+.footer-image {
+    object-fit: cover;
+    border-radius: 50%;
+    min-width: 10em;
+    max-height: 20em;
+    max-width: 20em;
+
+}
+.top-footer, .mid-footer, .bottom-footer{
+ background-color: #16242f;
+ color: #fff;
 }
 /*end*/
 
@@ -185,6 +246,9 @@ max-width: 50%;
 
 @media screen and (max-width: 39.9375em) {
     
+    body {
+        padding: 2em;
+    }
     .s-hide {
         display: none;
         
@@ -203,7 +267,7 @@ max-width: 50%;
        }
      .footer-grid-container {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 2em;
      }
      .two {
