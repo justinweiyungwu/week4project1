@@ -388,6 +388,9 @@ footer {
     .left-text p {
         font-size: 0.5em;
     }
+    .mission {
+        display: none;
+    }
 
 }
 
