@@ -33,7 +33,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    
+
 }
 
 ::-moz-selection {
@@ -112,6 +112,51 @@ p {
     color: gray;
 }
 
+.left-text h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.left-text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.top-footer-info p {
+    font-style: italic;
+}
+.top-footer-info h2 {
+    text-align: left;
+    font-weight: 400;
+}
+.border {
+    border-color: gray;
+    position: relative;
+    right: -1em;
+    margin-left: 9em;
+    z-index: 1;
+    
+}
+
+.border1 {
+border-color: #19b2de;
+margin-top: -1.2em;
+margin-left: 3em;
+border-width: 2px;
+z-index: 2;
+
+
+}
+.title-border {
+    border-color: red;
+}
+
+.mid-footer h2{
+     text-align: left;
+
+}
 
 /* ==========================================================================
    2. LAYOUT
@@ -145,11 +190,18 @@ header {
 
 .col {
     position: relative;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(255, 255, 255);
     object-fit: fill;
 }
+.top {
+    margin-top: -4em;
+    margin-bottom: -2em;
+}
 .title-container {
+    display: grid;
 text-align: center;
+justify-content: center;
+line-height: 0.7em;
 }
 
 .navbar {
@@ -162,22 +214,61 @@ text-align: center;
 /*photo box*/
 
 .sml-photo img{
-    max-height: 20em;
+    max-height: 15em;
     object-fit: cover;
 }
 .row-bottom-col {
     display: grid;
+    grid-template-columns: 3fr 1fr;
     background-color: #19b2de;
     padding: 0%;
 }
 
 .left-text {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
-line-height: 0.1em;
-max-width: 50%;
+line-height: 0em;
+min-width: 75%;
+}
+.right-box {
+   max-width: 6em; 
+}
+
+/*end*/
+
+/*footer*/
+
+footer {
+ display: grid;
+ justify-content: center;
+    background-color: #16242f;
+    margin: 2em -2em -2em -2em;
+    padding: 1em;
+}
+.footer-grid-container{
+    align-items: flex-start;
+    justify-content: center;
+}
+.top-footer-image {
+    padding-bottom: 20em;
+}
+
+
+.footer-image {
+    
+    object-fit: cover;
+    border-radius: 50%;
+    min-width: 10em;
+    min-height: 10em;
+    max-height: 10em;
+    max-width: 10em;
+
+}
+.top-footer, .mid-footer, .bottom-footer{
+ background-color: #16242f;
+ color: #fff;
 }
 /*end*/
 
@@ -185,6 +276,9 @@ max-width: 50%;
 
 @media screen and (max-width: 39.9375em) {
     
+    body {
+        padding: 2em;
+    }
     .s-hide {
         display: none;
         
@@ -203,8 +297,9 @@ max-width: 50%;
        }
      .footer-grid-container {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 2em;
+        grid-template-columns: 0fr 1fr;
+        margin-bottom: 2em;
+       
      }
      .two {
         margin-bottom: 8rem;
@@ -227,6 +322,9 @@ max-width: 50%;
         display: grid;
         column-gap: 0.5rem;
         row-gap: 0.5rem;
+    }
+    .title-container {
+        max-width: 100%;
     }
     .m-col-2 {
         grid-template-columns: 1fr 1fr;
@@ -284,6 +382,13 @@ max-width: 50%;
     .l-hide {
         display: none;
     }
+    .left-text h2 {
+        font-size: 0.7em;
+    }
+    .left-text p {
+        font-size: 0.5em;
+    }
+
 }
 
 
