@@ -230,7 +230,7 @@ line-height: 0.7em;
     align-items: flex-start;
     flex-direction: column;
 line-height: 0em;
-min-width: 75%;
+min-width: 90%;
 }
 .right-box {
    max-width: 6em; 
@@ -354,6 +354,7 @@ footer {
     .m-hide {
         display: none;
     }
+
 }
 
 
@@ -383,10 +384,13 @@ footer {
         display: none;
     }
     .left-text h2 {
-        font-size: 0.7em;
+        font-size: 1em;
     }
     .left-text p {
-        font-size: 0.5em;
+        font-size: 0.7em;
+    }
+    .mission {
+        display: none;
     }
 
 }
